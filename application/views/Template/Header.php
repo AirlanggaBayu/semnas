@@ -7,7 +7,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>Jobest | Landing, Corporate &amp; Business Templatee</title>
+    <title>Seminar Nasional 2021</title>
 
 
     <!-- ===============================================-->

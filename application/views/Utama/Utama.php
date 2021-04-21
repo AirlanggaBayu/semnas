@@ -183,6 +183,54 @@
                 </div>
             </div>
         </section>
+        <section class="py-0">
+            <div class="container-lg"  id="template">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 text-center">
+                            <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Template</h6>
+                            <p>Download Format Template </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flex-center">
+                    <div class="col-xl-10 px-0">
+                        <div class="carousel slide pt-6" id="carouselExampleDark" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
+                                        <div class="col-md-6 mb-8 mb-md-0">
+                                            <div class="card card-span h-100 shadow-lg">
+                                                
+                                                <div class="card-body d-flex flex-column flex-center py-6">
+                                                    <h4><b>Template Abstrak</b></h4>
+                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                                                    <a href="#" class="btn btn-warning">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-6 mb-8 mb-md-0">
+                                            <div class="card card-span h-100 shadow-lg">
+                                                
+                                                <div class="card-body d-flex flex-column flex-center py-6">
+                                                <h4><b>Template Full</b></h4>
+                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                                                    <a href="#" class="btn btn-warning">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
         <!-- <section class="py-5">
             <div class="bg-holder d-none d-sm-block" style="background-image:url(<?= base_url(); ?>/assets/public/assets/img/illustrations/category-bg.png);background-position:right top;background-size:200px 320px;">
             </div> -->
