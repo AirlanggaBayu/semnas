@@ -48,7 +48,7 @@
                                             <td><?= $jadwals->deskripsi; ?></td>
                                             <td>
                                                 <div class=""><button class="btn btn-primary" id="edit" data-id="<?= $jadwals->no ?>">Update</button>
-                                                    <button class="btn btn-danger">Delete</button>
+                                                    <a href="<?= base_url('admin/jadwal/delete/') . $jadwals->no ?>" class="btn btn-danger">Delete</a>
                                                 </div>
                                             </td>
                                         </tr>

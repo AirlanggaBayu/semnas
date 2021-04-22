@@ -37,4 +37,9 @@ class Jadwal extends CI_Controller
         $this->M_admin->updatedata('jadwal', ['no' => $this->input->post('kode')], $data);
         redirect(base_url('admin/jadwal/'));
     }
+    public function delete($id)
+    {
+        $this->M_admin->delete('jadwal', ['no' => $id]);
+        redirect(base_url('admin/jadwal/'));
+    }
 }
