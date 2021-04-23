@@ -53,7 +53,7 @@
                         <li class="nav-item px-2"><a class="nav-link fw-medium" href="#artikel">Artikel</a></li>
                     </ul>
                     <form class="ps-lg-5">
-                        <button class="btn btn-lg btn-primary rounded-pill bg-gradient order-0" type="submit">Sign In</button>
+                        <button class="btn btn-lg btn-primary rounded-pill bg-gradient order-0" type="submit">Daftar</button>
                     </form>
                 </div>
             </div>

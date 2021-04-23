@@ -11,7 +11,9 @@
                 <div class="row align-items-center min-vh-75 min-vh-md-100">
                     <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
                         <h1 class="mt-6 mb-sm-4 display-2 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-8">Seminar Nasional 2021 <br class="d-block d-lg-none d-xl-block" />Politeknik Negeri Jember</h1>
-                        <p class="mb-4 fs-1">Lorem Ipsum Sit Dolor Amet</p>
+                    </div>
+                    <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
+                        <img src="<?= base_url()?>/assets/public/assets/img/logo-polije.png" width="450" alt="" srcset="">
                     </div>
                 </div>
             </div>
@@ -70,17 +72,6 @@
         </section>
         <!-- <section> close ============================-->
         <!-- ============================================-->
-
-        <section class="py-0"><img class="w-100" src="<?= base_url(); ?>/assets/public/assets/img/illustrations/come-on-join.png" alt="" />
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 text-center">
-                        <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Come on, join with us !</h6>
-                        <p>Create an account and refer your friend </p>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="py-8">
             <div class="container-lg"  id="pembicara">
                 <div class="row flex-center">
@@ -184,7 +175,7 @@
             </div>
         </section>
         <section class="py-0">
-            <div class="container-lg"  id="template">
+            <div class="container-lg" id="template">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 text-center">
@@ -195,24 +186,18 @@
                 </div>
                 <div class="row flex-center">
                     <div class="col-xl-10 px-0">
-                        <div class="carousel slide pt-6" id="carouselExampleDark" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="10000">
                                     <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
                                         <div class="col-md-6 mb-8 mb-md-0">
-                                            <div class="card card-span h-100 shadow-lg">
-                                                
+                                            <div class="card card-span shadow-lg">
                                                 <div class="card-body d-flex flex-column flex-center py-6">
                                                     <h4><b>Template Abstrak</b></h4>
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                                                    <p class="card-text text-center text-1000">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
                                                     <a href="#" class="btn btn-warning">Download</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        
                                         <div class="col-md-6 mb-8 mb-md-0">
-                                            <div class="card card-span h-100 shadow-lg">
-                                                
+                                            <div class="card card-span shadow-lg">
                                                 <div class="card-body d-flex flex-column flex-center py-6">
                                                 <h4><b>Template Full</b></h4>
                                                     <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
@@ -221,12 +206,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                               
-                                
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -234,7 +213,7 @@
         <!-- <section class="py-5">
             <div class="bg-holder d-none d-sm-block" style="background-image:url(<?= base_url(); ?>/assets/public/assets/img/illustrations/category-bg.png);background-position:right top;background-size:200px 320px;">
             </div> -->
-            <!--/.bg-holder-->
+            <!--/.bg-holder -->
 
             <!-- <div class="container">
                 <div class="row justify-content-center">
@@ -312,23 +291,4 @@
             </div>
         </section> -->
 
-
-        <!-- ============================================-->
-        <!-- <section> begin ============================-->
-        <section class="py-8">
-
-            <div class="container">
-                <div class="row flex-center">
-                    <div class="col-md-5 order-md-1 text-center text-md-end"><img class="img-fluid mb-4" src="<?= base_url(); ?>/assets/public/assets/img/illustrations/feature.png" width="450" alt="" /></div>
-                    <div class="col-md-5 text-center text-md-start">
-                        <h6 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm">Over 10,000 top <br> companies join with us</h6>
-                        <p class="my-4 pe-xl-8">Posting now includes out of the box integration with major CRM &amp;amp; accounting and ERP platforms, as well as an open API that allows you to seamlessly integrate with your business systems.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end of .container-->
-
-        </section>
-        <!-- <section> close ============================-->
-        <!-- ============================================-->
         
