@@ -51,13 +51,14 @@
                 <table class="table">
                 <tbody>
                     <tr>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    </tr>
+                    <td>Tanggal</td>
+                    <td>Jadwal</td>
                     <tr>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                    <?php foreach ($jadwal as $index => $jadwals){?>
+                    <td><?= $jadwals->tanggal?></td>
+                    <td><?= $jadwals->deskripsi?></td>
                     </tr>
+                    <?php } ?>
                 </tbody>
                 </table>
 
@@ -184,6 +185,7 @@
                         </div>
                     </div>
                 </div>
+                <?php foreach ($template as $index => $templates) {?>
                 <div class="row flex-center">
                     <div class="col-xl-10 px-0">
                                     <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
@@ -191,21 +193,13 @@
                                             <div class="card card-span shadow-lg">
                                                 <div class="card-body d-flex flex-column flex-center py-6">
                                                     <h4><b>Template Abstrak</b></h4>
-                                                    <p class="card-text text-center text-1000">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
-                                                    <a href="#" class="btn btn-warning">Download</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-8 mb-md-0">
-                                            <div class="card card-span shadow-lg">
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                <h4><b>Template Full</b></h4>
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
-                                                    <a href="#" class="btn btn-warning">Download</a>
+                                                    <p class="card-text text-center text-1000"><?= $templates->keterangan?></p>
+                                                    <a href="<?=$templates->link?>" class="btn btn-warning">Download</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                         <?php } ?>
                 </div>
             </div>
         </section>
