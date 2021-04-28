@@ -85,87 +85,18 @@
                     <div class="col-xl-10 px-0">
                         <div class="carousel slide pt-6" id="carouselExampleDark" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="carousel-item active">
                                     <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
+                                    <?php foreach ($pembicara as $index => $pembicara) {?>
                                         <div class="col-md-4 mb-8 mb-md-0">
                                             <div class="card card-span h-100 shadow-lg">
                                                 <div class="card-span-img"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" alt="" /></div>
                                                 <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                                                    <h4 class="card-text text-center"><?= $pembicara->nama_pembicara?></h4>
+                                                    <p class="card-text text-center text-1000 px-4"><?= $pembicara->keterangan?></p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-4 mb-8 mb-md-0">
-                                            <div class="card card-span h-100 shadow-lg">
-                                                <div class="card-span-img"><img src="<?= base_url();?>/assets/public/assets/img/gallery/user-2.png" alt="" /></div>
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-8 mb-md-0">
-                                            <div class="card card-span h-100 shadow-lg">
-                                                <div class="card-span-img"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-3.png" alt="" /></div>
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="2000">
-                                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
-                                        <div class="col-md-4 mb-8 mb-md-0">
-                                            <div class="card card-span h-100 shadow-lg">
-                                                <div class="card-span-img"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" alt="" /></div>
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-8 mb-md-0">
-                                            <div class="card card-span h-100 shadow-lg">
-                                                <div class="card-span-img"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-2.png" alt="" /></div>
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-8 mb-md-0">
-                                            <div class="card card-span h-100 shadow-lg">
-                                                <div class="card-span-img"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-3.png" alt="" /></div>
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
-                                        <div class="col-md-4 mb-8 mb-md-0">
-                                            <div class="card card-span h-100 shadow-lg">
-                                                <div class="card-span-img"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" alt="" /></div>
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-8 mb-md-0">
-                                            <div class="card card-span h-100 shadow-lg">
-                                                <div class="card-span-img"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-2.png" alt="" /></div>
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-8 mb-md-0">
-                                            <div class="card card-span h-100 shadow-lg">
-                                                <div class="card-span-img"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-3.png" alt="" /></div>
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
-                                                </div>
-                                            </div>
+                                    <?php }?>
                                         </div>
                                     </div>
                                 </div>
