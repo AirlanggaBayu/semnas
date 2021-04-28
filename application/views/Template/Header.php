@@ -27,6 +27,9 @@
     <!-- ===============================================-->
     <link href="<?= base_url('assets/public/assets/css/theme.css'); ?>" rel="stylesheet" />
 
+    <!-- BOOTSTRAP ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
 </head>
 
 <!DOCTYPE html>
@@ -50,7 +53,7 @@
                         <li class="nav-item px-2"><a class="nav-link fw-medium" href="#jadwal">Jadwal</a></li>
                         <li class="nav-item px-2"><a class="nav-link fw-medium" href="#pembicara">Pembicara</a></li>
                         <li class="nav-item px-2"><a class="nav-link fw-medium" href="#template">Template</a></li>
-                        <li class="nav-item px-2"><a class="nav-link fw-medium" href="#artikel">Artikel</a></li>
+                        <li class="nav-item px-2"><a class="nav-link fw-medium" href="#call">Call of Paper</a></li>
                         <li class="nav-item px-2"><a class="nav-link fw-medium" href="#">Registrasi</a></li>
                     </ul>
                 </div>

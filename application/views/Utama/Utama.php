@@ -106,7 +106,77 @@
                 </div>
             </div>
         </section>
+
         <section class="py-0">
+            <div class="container-lg" id="call">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 text-center">
+                            <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Call of Paper</h6>
+                            <p>Call of Paper </p>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="row justify-content-center">
+            <div class="col-md-4 mb-5">
+              <div class="card">
+                
+                <div class="card-body">
+                  <h4 class="text-center">Book of Abstract <i class="bi bi-book-half"></i> </h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="card">
+                
+                <div class="card-body">
+                  <h4 class="text-center">Poster Guideline <i class="bi bi-journal-bookmark"></i></h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="card">
+                
+                <div class="card-body">
+                  <h4 class="text-center">Presentation Schedule <i class="bi bi-calendar2-day-fill"></i></h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="card">
+               
+                <div class="card-body">
+                <h4 class="text-center">Program Schedule <i class="bi bi-calendar-month"></i></h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="card">
+                
+                <div class="card-body">
+                <h4 class="text-center" >Awards <i class="bi bi-award"></i> </h4> 
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="card">
+                
+                <div class="card-body">
+                <h4 class="text-center">Submission System <i class="bi bi-cloud-arrow-up-fill"></i></h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+           
+        </section>
+
+        <section class="py-3">
             <div class="container-lg" id="template">
                 <div class="container">
                     <div class="row align-items-center">
