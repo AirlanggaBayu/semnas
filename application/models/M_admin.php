@@ -29,4 +29,7 @@ class M_admin extends CI_Model
     {
         $this->db->delete($tabel, $where);
     }
+    function getdataarray($tabel){
+        return $this->db->get($tabel)->row_array();
+    }
 }

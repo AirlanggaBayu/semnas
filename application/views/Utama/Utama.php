@@ -28,7 +28,7 @@
                     <div class="col-md-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4" src="<?= base_url();?>/assets/public/assets/img/illustrations/passion.png" width="450" alt="" /></div>
                     <div class="col-md-5 text-center text-md-start">
                         <h6 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm">Tentang Seminar</h6>
-                        <p class="my-4 pe-xl-8"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="my-4 pe-xl-8"><?php echo $profil['keterangan'];?></p>
                     </div>
                 </div>
             </div>

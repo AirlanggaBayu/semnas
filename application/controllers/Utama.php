@@ -13,6 +13,7 @@ class Utama extends CI_Controller
         $data['jadwal'] = $this->M_admin->getdata('jadwal');
         $data['template'] = $this->M_admin->getdata('template');
         $data['pembicara'] = $this->M_admin->getdata('pembicara');
+        $data['profil'] = $this->M_admin->getdataarray('tentang_kami');
         $this->load->view('Template/Header');
         $this->load->view('Utama/utama', $data);
         $this->load->view('Template/Footer');
