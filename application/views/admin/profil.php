@@ -87,7 +87,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Keterangan</label>
-                        <input type="text" class="form-control" name="keterangan">
+                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">

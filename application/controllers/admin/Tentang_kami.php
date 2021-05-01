@@ -1,5 +1,5 @@
 <?php
-class Profil extends CI_Controller
+class Tentang_Kami extends CI_Controller
 {
     function __construct()
     {
@@ -20,7 +20,7 @@ class Profil extends CI_Controller
         $data = ['gambar' => $gambar, 'keterangan' => $keterangan];
         print_r($data);
         $this->M_admin->insertdata('tentang_kami', $data);
-        redirect(base_url('admin/profil/'));
+        redirect(base_url('admin/tentang_kami/'));
     }
     public function getketerangan()
     {
@@ -35,11 +35,11 @@ class Profil extends CI_Controller
         $data = ['gambar' => $gambar, 'deskripsi' => $keterangan];
         print_r($data);
         $this->M_admin->updatedata('tentang_kami', ['no' => $this->input->post('kode')], $data);
-        redirect(base_url('admin/profil/'));
+        redirect(base_url('admin/tentang_kami/'));
     }
     public function delete($id)
     {
         $this->M_admin->delete('tentang_kami', ['no' => $id]);
-        redirect(base_url('admin/profil/'));
+        redirect(base_url('admin/tentang_kami/'));
     }
 }

@@ -218,10 +218,10 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?= base_url('admin/profil') ?>" class="nav-link">
+                            <a href="<?= base_url('admin/tentang_kami') ?>" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
-                                    Profil
+                                    Tentang Kami
                                 </p>
                             </a>
                         </li>
