@@ -35,7 +35,7 @@
                      <form action="<?= base_url('admin/artikel/update') ?>" method="post" enctype="multipart/form-data">
                          <div class="card-header">
                              <h3 class="card-title">
-                                 Artikel <?= $artikel[0]->gambar ?>
+                                 Artikel
                              </h3>
                              <div class="float-right">
                                  <button type="submit" class="btn btn-primary">Simpan</button>

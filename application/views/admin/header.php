@@ -234,6 +234,14 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="<?= base_url('admin/artikel') ?>" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Artikel
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="<?= base_url('admin/template') ?>" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
