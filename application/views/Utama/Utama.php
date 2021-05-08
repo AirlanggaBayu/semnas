@@ -43,11 +43,12 @@
                 <!-- ============================================-->
                 <!-- <section> begin ============================-->
                 <section class="py-8">
-                <div class="row flex-center">
-                    <div class="col-md-11 col-lg-6 col-xl-4 col-xxl-5">
-                        <h6 class="fs-3 fs-lg-4 lh-sm">Jadwal</h6>
+                <div class="row align-items-center">
+                        <div class="col-12 text-center">
+                            <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Jadwal</h6>
+                            <p>Jadwal Kegiatan</p>
+                        </div>
                     </div>
-                </div>
                 <table class="table">
                 <tbody>
                     <tr>
@@ -170,60 +171,50 @@
            
         </section>
 
-        <section class="py-3">
+        <section class="py-0">
             <div class="container-lg" id="template">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 text-center">
-                            <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Template</h6>
-                            <p>Download Format Template </p>
+                            <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Download & Upload Abstrak</h6>
+                            <p>Download dan Upload Abstrak disini </p>
                         </div>
                     </div>
                 </div>
-                <?php foreach ($template as $index => $templates) {?>
-                <div class="row flex-center">
-                    <div class="col-xl-10 px-0">
-                                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
-                                        <div class="col-md-6 mb-8 mb-md-0">
-                                            <div class="card card-span shadow-lg">
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <h4><b>Template Abstrak</b></h4>
-                                                    <p class="card-text text-center text-1000"><?= $templates->keterangan?></p>
-                                                    <a href="<?=$templates->link?>" class="btn btn-warning">Download</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                         <?php } ?>
+                
+                    <div class="row justify-content-center">
+                    <div class="col-md-4 mb-5">
+              <div class="card">
+                
+                <div class="card-body">
+                  <h4 class="text-center">Download Abstrak </h4>
+                  <div class="d-grid gap-2">
+                  <p class="card-text text-center text-1000"></p>
+                  <a href="" class="btn btn-success"><i class="bi bi-arrow-down-circle"></i>  Download</a>
                 </div>
+
+                </div>
+              </div>
             </div>
+            <div class="col-md-4 mb-5">
+              <div class="card">
+                
+                <div class="card-body">
+                  <h4 class="text-center">Upload Abstrak </h4>
+                  <div class="d-grid gap-2">
+                  <p class="card-text text-center text-1000"></p>
+                  <a href="" class="btn btn-warning"><i class="bi bi-arrow-up-circle"></i>  Upload</a>
+                </div>
+
+                </div>
+              </div>
+            </div>
+            
+          
+           
         </section>
 
-        <section class="py-3">
-        <div class="container-lg" id="template">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-12 text-center">
-                            <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Unggah</h6>
-                            <p>Abstrak dan Artikel</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row flex-center">
-                    <div class="col-xl-10 px-0">
-                                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
-                                        <div class="col-md-6 mb-8 mb-md-0">
-                                            <div class="card card-span shadow-lg">
-                                                <div class="card-body d-flex flex-column flex-center py-6">
-                                                    <h4><b>Template Abstrak</b></h4>
-                                                    <p class="card-text text-center text-1000"></p>
-                                                    <a href="" class="btn btn-warning">Unggah</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                </div>
-            </div>
+       
         </section>
         
         </section>
