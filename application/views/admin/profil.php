@@ -44,11 +44,11 @@
                                     <?php foreach ($profil as $index => $profils) { ?>
                                         <tr>
                                             <td><?= $index + 1 ?></td>
-                                            <td><?= $profils->gambar; ?></td>
+                                            <td> <img src="<?= base_url('img/tentang_kami/') . $profils->gambar ?>" alt="" srcset="" style="max-width: 300px;max-height: 300px;"></td>
                                             <td><?= $profils->keterangan; ?></td>
                                             <td>
                                                 <div class=""><button class="btn btn-primary" id="edit" data-id="<?= $profils->no ?>">Update</button>
-                                                    <a href="<?= base_url('admin/profil/delete/') . $profils->no ?>" class="btn btn-danger">Delete</a>
+                                                    <a href="<?= base_url('admin/tentang_kami/delete/') . $profils->no ?>" class="btn btn-danger">Delete</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -79,15 +79,15 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="<?= base_url('admin/profil/simpan') ?>" method="POST">
+            <form action="<?= base_url('admin/tentang_kami/simpan') ?>" method="POST" enctype="multipart/form-data">
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Profil</label>
-                        <input type="text" class="form-control" name="gambar" aria-describedby="emailHelp" placeholder="Masukkan Profil">
+                        <label for="exampleFormControlFile1">Gambar</label>
+                        <input type="file" class="form-control-file" name="gambar" id="exampleFormControlFile1">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Keterangan</label>
-                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                        <textarea class="form-control" name="keterangan" id="" cols="30" rows="10"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -109,16 +109,17 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="<?= base_url('admin/profil/update') ?>" method="POST">
+            <form action="<?= base_url('admin/tentang_kami/update') ?>" method="POST" enctype="multipart/form-data">
                 <div class="modal-body">
                     <input type="hidden" id="kode" name="kode">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Profil</label>
-                        <input type="text" class="form-control" name="gambar" id="gambar" aria-describedby="emailHelp" placeholder="Masukkan Profil">
+                        <label for="exampleFormControlFile1">Gambar</label>
+                        <input type="file" class="form-control-file" name="gambar" id="exampleFormControlFile1">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Keterangan</label>
-                        <input type="text" class="form-control" name="keterangan" id="keterangan">
+                        <!-- <input type="text" class="form-control" name="keterangan" id="keterangan"> -->
+                        <textarea class="form-control" name="keterangan" id="desc" cols="30" rows="10"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -136,7 +137,7 @@
             var id = $(this).data('id');
             console.log(id);
             $.ajax({
-                url: "<?= base_url('admin/profil') ?>/getketerangan",
+                url: "<?= base_url('admin/tentang_kami') ?>/getketerangan",
                 dataType: "JSON",
                 data: {
                     id: id
@@ -146,6 +147,7 @@
                     $('#kode').val(data[0]['no']);
                     $('#gambar').val(data[0]['gambar']);
                     $('#keterangan').val(data[0]['keterangan']);
+                    $('#desc').val(data[0]['keterangan']);
                 }
             });
         })
