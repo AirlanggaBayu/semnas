@@ -99,6 +99,7 @@
                 <?php }?>
   
             </div>
+        </div>
 
                 
 
@@ -113,7 +114,7 @@
                     </div>
                 </div>
                 
-                    <div class="row justify-content-center">
+            <div class="row justify-content-center">
             <div class="col-md-4 mb-5">
               <div class="card">
                 
@@ -189,8 +190,8 @@
                 <div class="card-body">
                   <h4 class="text-center">Download Abstrak </h4>
                   <div class="d-grid gap-2">
-                  <p class="card-text text-center text-1000"></p>
-                  <a href="" class="btn btn-success"><i class="bi bi-arrow-down-circle"></i>  Download</a>
+                  <p class="card-text text-center text-1000">Unduh Template Abstrak</p>
+                  <a href="" class="btn btn-success"><i class="bi bi-arrow-down-circle"></i>Download</a>
                 </div>
 
                 </div>
@@ -205,19 +206,12 @@
                   <p class="card-text text-center text-1000"></p>
                   <a href="" class="btn btn-warning"><i class="bi bi-arrow-up-circle"></i>  Upload</a>
                 </div>
-
-                </div>
               </div>
             </div>
-            
-          
-           
+        </div>  
         </section>
 
        
-        </section>
-        
-        </section>
        
         <!-- <section class="py-5">
             <div class="bg-holder d-none d-sm-block" style="background-image:url(<?= base_url(); ?>/assets/public/assets/img/illustrations/category-bg.png);background-position:right top;background-size:200px 320px;">
