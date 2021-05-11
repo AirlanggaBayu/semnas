@@ -13,7 +13,7 @@
                         <h1 class="mt-6 mb-sm-4 display-2 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-8">Seminar Nasional 2021 <br class="d-block d-lg-none d-xl-block" />Politeknik Negeri Jember</h1>
                     </div>
                     <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
-                        <img src="<?= base_url()?>/assets/public/assets/img/logo-polije.png" width="450" alt="" srcset="">
+                        <img src="<?= base_url()?>/assets/public/assets/img/logo-polije.png" width="450" alt="" data-aos="fade-down"  data-aos-duration="1000" srcset="">
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@
             </div>
             <!--/.bg-holder-->
 
-            <div class="container" id="tentang">
+            <div class="container" id="tentang" data-aos="fade-left"  data-aos-duration="1000">
                 <div class="row flex-center">
                     <div class="col-md-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4" src="<?= base_url();?>/assets/public/assets/img/illustrations/passion.png" width="450" alt="" /></div>
                     <div class="col-md-5 text-center text-md-start">
@@ -39,7 +39,7 @@
         <!-- <section> begin ============================-->
         <section class="py-0">
 
-            <div class="container" id="jadwal">
+            <div class="container" id="jadwal"data-aos="fade-right"  data-aos-duration="1000">
                 <!-- ============================================-->
                 <!-- <section> begin ============================-->
                 <section class="py-8">
@@ -85,7 +85,7 @@
                     <div class="card">
                         
                       
-                            <div class="card-span-img " ><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" > 
+                            <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000" ><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" > 
                                 <div class="card-body">
                                     <h3 class="card-text text-center"><?= $pembicara->nama_pembicara?></h3>
                                     <p class="card-text text-center"><?= $pembicara->keterangan?></p>
@@ -116,42 +116,42 @@
                 
             <div class="row justify-content-center">
             <div class="col-md-4 mb-5">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500">
                 
-                <div class="card-body">
+                <div class="card-body" >
                   <h4 class="text-center">Book of Abstract <i class="bi bi-book-half"></i> </h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-5">
-              <div class="card">
+              <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
                 
-                <div class="card-body">
+                <div class="card-body" >
                   <h4 class="text-center">Poster Guideline <i class="bi bi-journal-bookmark"></i></h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-5">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
                 
-                <div class="card-body">
+                <div class="card-body" >
                   <h4 class="text-center">Presentation Schedule <i class="bi bi-calendar2-day-fill"></i></h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 mb-5" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
               <div class="card">
                
-                <div class="card-body">
+                <div class="card-body" >
                 <h4 class="text-center">Program Schedule <i class="bi bi-calendar-month"></i></h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 mb-5"data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
               <div class="card">
                 
                 <div class="card-body">
@@ -161,7 +161,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-5">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
                 
                 <div class="card-body">
                 <h4 class="text-center">Submission System <i class="bi bi-cloud-arrow-up-fill"></i></h4>
@@ -191,7 +191,7 @@
                   <h4 class="text-center">Download Abstrak </h4>
                   <div class="d-grid gap-2">
                   <p class="card-text text-center text-1000">Unduh Template Abstrak</p>
-                  <a href="" class="btn btn-success"><i class="bi bi-arrow-down-circle"></i>Download</a>
+                  <a href="" class="btn btn-success"><i class="bi bi-arrow-down-circle"></i>  Download</a>
                 </div>
 
                 </div>
