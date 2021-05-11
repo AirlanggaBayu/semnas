@@ -44,6 +44,7 @@
                                     <?php foreach ($pembicara as $index => $pembicaras) { ?>
                                         <tr>
                                             <td><?= $index + 1 ?></td>
+                                            <td> <img src="<?= base_url('img/pembicara/') . $pembicaras->gambar_pembicara ?>" alt="" srcset="" style="max-width: 300px;max-height: 300px;"></td>
                                             <td><?= $pembicaras->nama_pembicara; ?></td>
                                             <td><?= $pembicaras->keterangan; ?></td>
                                             <td>
@@ -79,8 +80,12 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="<?= base_url('admin/pembicara/simpan') ?>" method="POST">
+            <form action="<?= base_url('admin/pembicara/simpan') ?>" method="POST" enctype="multipart/form-data">
                 <div class="modal-body">
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Gambar</label>
+                        <input type="file" class="form-control-file" name="gambar" id="exampleFormControlFile1">
+                    </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Pembicara</label>
                         <input type="text" class="form-control" name="pembicara" aria-describedby="emailHelp" placeholder="Masukkan Pembicara">
@@ -109,9 +114,13 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="<?= base_url('admin/pembicara/update') ?>" method="POST">
+            <form action="<?= base_url('admin/pembicara/update') ?>" method="POST" enctype="multipart/form-data">
                 <div class="modal-body">
                     <input type="hidden" id="kode" name="kode">
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Gambar</label>
+                        <input type="file" class="form-control-file" name="gambar" id="exampleFormControlFile1">
+                    </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Pembicara</label>
                         <input type="text" class="form-control" name="pembicara" id="pembicara" aria-describedby="emailHelp" placeholder="Masukkan Pembicara">
