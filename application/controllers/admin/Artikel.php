@@ -6,6 +6,9 @@ class Artikel extends CI_Controller
         parent::__construct();
         $this->load->model('M_admin');
         $this->load->helper('string');
+        if (empty($this->session->userdata('is_login'))) {
+            redirect('admin/login');
+        }
     }
     public function index()
     {
