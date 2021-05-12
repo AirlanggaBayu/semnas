@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 25 Apr 2021 pada 16.25
+-- Waktu pembuatan: 11 Bulan Mei 2021 pada 18.33
 -- Versi server: 10.4.16-MariaDB
 -- Versi PHP: 7.4.12
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `semnas`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `artikel`
+--
+
+CREATE TABLE `artikel` (
+  `id` int(1) NOT NULL,
+  `gambar` varchar(255) NOT NULL,
+  `isi` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `artikel`
+--
+
+INSERT INTO `artikel` (`id`, `gambar`, `isi`) VALUES
+(1, 'oAfSp5mq.png', '                                                                                                                    bhai              ');
 
 -- --------------------------------------------------------
 
@@ -58,7 +77,8 @@ CREATE TABLE `pembicara` (
 --
 
 INSERT INTO `pembicara` (`no`, `gambar_pembicara`, `nama_pembicara`, `keterangan`) VALUES
-(2, '', 'rofiq', 'ceo');
+(2, 'xJL9VKBd.jpg', 'rofiq riadi', 'ceo'),
+(3, 'M076KHiX.jpg', 'akbar rais', 'pengusaha tekstil');
 
 -- --------------------------------------------------------
 
@@ -96,11 +116,18 @@ CREATE TABLE `tentang_kami` (
 --
 
 INSERT INTO `tentang_kami` (`no`, `gambar`, `keterangan`) VALUES
-(1, 'asdadasd', 'hai\r\n');
+(1, 'iObxwRNB.PNG', 'hai'),
+(3, 'L7wcmWM5.PNG', 'namaku rofiq');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `artikel`
+--
+ALTER TABLE `artikel`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `jadwal`
@@ -131,6 +158,12 @@ ALTER TABLE `tentang_kami`
 --
 
 --
+-- AUTO_INCREMENT untuk tabel `artikel`
+--
+ALTER TABLE `artikel`
+  MODIFY `id` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT untuk tabel `jadwal`
 --
 ALTER TABLE `jadwal`
@@ -140,7 +173,7 @@ ALTER TABLE `jadwal`
 -- AUTO_INCREMENT untuk tabel `pembicara`
 --
 ALTER TABLE `pembicara`
-  MODIFY `no` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `no` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `template`
@@ -152,7 +185,7 @@ ALTER TABLE `template`
 -- AUTO_INCREMENT untuk tabel `tentang_kami`
 --
 ALTER TABLE `tentang_kami`
-  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
