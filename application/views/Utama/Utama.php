@@ -78,27 +78,67 @@
             <div class="row text-center">
                 <h1>Pembicara</h1>
             </div>
-                <div class="row text-center ">
-            <?php foreach ($pembicara as $index => $pembicara) {?>
-                <div class="col-md-4 mb-3">
+            
+            
+            <div class="row">
+            <div class="row text-center ">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card" style="width: 450px;">
+                       <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000" ><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" >
+                        <div class="card-body">
+                            <p class="card-text">ini hanya mencoba saja</p>
+                        </div>
+                    </div>
                 
-                    <div class="card">
+                </div>
+               
+            </div>
+
+            <div class="row mt-5">
+            <div class="row text-center ">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card" style="width: 450px;">
+                       <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000" ><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" >
+                        <div class="card-body">
+                            <p class="card-text">ini hanya mencoba saja</p>
+                        </div>
+                    </div>
+                
+                </div>
+               
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row mt-5">
+                <div class="col">
+                <div class="row text-center ">
+                <?php foreach ($pembicara as $index => $pembicara) {?>
+                    <div class="col-md-4 mb-3">
                         
-                      
-                            <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000" ><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" > 
+                         <div class="card">
+                                
+                            
+                             <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000" ><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" > 
                                 <div class="card-body">
                                     <h3 class="card-text text-center"><?= $pembicara->nama_pembicara?></h3>
                                     <p class="card-text text-center"><?= $pembicara->keterangan?></p>
                                 </div>
+                                        
+                            </div>
+                            
                                 
                             </div>
-                     
-                        
-                    </div>
-                </div>
-                <?php }?>
-  
+                        </div>
+                    <?php }?>
             </div>
+                </div>
+            </div>
+
+            
+    
+            
         </div>
 
                 

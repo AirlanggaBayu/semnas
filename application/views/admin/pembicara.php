@@ -90,6 +90,16 @@
                         <label for="exampleInputEmail1">Pembicara</label>
                         <input type="text" class="form-control" name="pembicara" aria-describedby="emailHelp" placeholder="Masukkan Pembicara">
                     </div>
+                    <div class="div">
+                        <label for="exampleInputEmail1">Kategori Pembicara</label>
+                        <select class="custom-select" name="" id="">
+                            <option selected>Pilih kategori pembicara</option>
+                            <option value="Opening Speech">Opening Speech</option>
+                            <option value="Keynote Speech">Keynote Speech</option>
+                            <option value="Guest Speech">Guest Speech</option>
+                            <option value="Speaker">Speaker</option>
+                        </select>
+                    </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">keterangan</label>
                         <input type="text" class="form-control" name="keterangan" placeholder="Masukkan Keterangan">
