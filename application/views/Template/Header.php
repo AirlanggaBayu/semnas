@@ -7,7 +7,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>Seminar Nasional 2021</title>
+    <title>Conference of Applied Animal Science</title>
 
 
     <!-- ===============================================-->
@@ -43,19 +43,19 @@
     <main class="main" id="top">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
             <div class="container"><a class="navbar-brand d-flex align-items-center fw-bolder fs-2 fst-italic" href="#">
-                    <div class="text-info">POLITEKNIK NEGERI JEMBER</div>
+                    <div class="text-info">CAAS-2021</div>
                     
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-                        <li class="nav-item px-2"><a class="nav-link fw-medium" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item px-2"><a class="nav-link fw-medium" href="#tentang">Tentang Kami</a></li>
-                        <li class="nav-item px-2"><a class="nav-link fw-medium" href="#jadwal">Jadwal</a></li>
-                        <li class="nav-item px-2"><a class="nav-link fw-medium" href="#pembicara">Pembicara</a></li>
-                        <li class="nav-item px-2"><a class="nav-link fw-medium" href="#template">Template</a></li>
-                        <li class="nav-item px-2"><a class="nav-link fw-medium" href="#call">Call of Paper</a></li>
-                        <li class="nav-item px-2"><a class="nav-link fw-medium" href="#">Registrasi</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#tentang">Tentang Kami</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#jadwal">Jadwal</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#pembicara">Pembicara</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#call">Call of Paper</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#template">Templete</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#registrasi">Registrasi</a></li>
                     </ul>
                 </div>
             </div>

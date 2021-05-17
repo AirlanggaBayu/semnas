@@ -1,29 +1,40 @@
-<section class="py-0 bg-primary-gradient">
+<section class="py-0 bg-primary-gradient" id="registrasi">
             <div class="bg-holder" style="background-image:url(<?= base_url(); ?>/assets/public/assets/img/illustrations/footer-bg.png);background-position:center;background-size:cover;">
             </div>
             <!--/.bg-holder-->
 
             <div class="container">
                 <div class="row flex-center py-8">
-                    <div class="col-lg-6 mb-4 text-center">
-                        <h1 class="text-white">Get started now</h1>
+                    <div class="col-lg-4 mb-2 text-center">
+                        <h1 class="text-white">Unggah Abstrak dan Artikel</h1>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
                         <form class="row row-cols-lg-auto g-0 align-items-center">
-                            <div class="col-9 col-lg-8">
+                            <!-- <div class="col-9 col-lg-8">
                                 <label class="visually-hidden" for="colFormLabel">Username</label>
                                 <div class="input-group">
                                     <input class="rounded-end-0 form-control" id="colFormLabel" type="email" placeholder="email address" />
                                 </div>
-                            </div>
-                            <div class="col-3 col-lg-4">
-                                <button class="btn btn-primary rounded-start-0" type="submit">Submit</button>
+                            </div> -->
+                            <div class="col-5 col-lg-20">
+                                <button class="btn btn-primary rounded-start-0" type="submit">Klik di sini</button>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="row justify-content-lg-between">
-                    <div class="col-6 col-sm-4 col-lg-auto mb-3">
+					<div class="col-lg-6 col-md-6 footer-info">
+						<h3 style="text-transform: capitalize;"><b>Tentang CAAS 2021</b></h3>
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="https://conference.polije.ac.id/caas/2021/img/icofa-logo.svg" alt=" " class="mb-3" height="100">
+							</div>
+							<div class="col-lg-8 text-white">
+								<p>Seminar Nasional Ilmu Peternakan Terapan Seri 1 (Semnas IPT-1) Tahun 2020 diselenggarakan oleh Jurusan Peternakan, Politeknik Negeri Jember. Adapun Tema kegiatan ini adalah Kedaulatan Pangan Nasional Melalui Pengembangan Potensi Ternak Lokal di Era Kenormalan Baru. Tahapan yang dilakukan pada Semnas IPT-1 Tahun 2020 adalah: 1) Seminar Nasional Umum, tanggal 19 Sep 2020; dan 2) Sesi Paralel, tanggal 21-22 September 2020.</p>
+							</div>
+						</div>
+					</div>
+                    <!-- <div class="col-6 col-sm-4 col-lg-auto mb-3">
                         <h5 class="mb-5 text-white">CATEGORIES </h5>
                         <ul class="list-unstyled mb-md-4 mb-lg-0">
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">IOS Developers</a></li>
@@ -33,8 +44,8 @@
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Content Writer</a></li>
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Program &amp; Tech</a></li>
                         </ul>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-auto mb-3">
+                    </div> -->
+                    <!-- <div class="col-6 col-sm-4 col-lg-auto mb-3">
                         <h5 class="mb-5 text-white">COMMUNITY </h5>
                         <ul class="list-unstyled mb-md-4 mb-lg-0">
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Events</a></li>
@@ -44,8 +55,17 @@
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Affiliates</a></li>
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Invite a Friend</a></li>
                         </ul>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-auto mb-3">
+                    </div> -->
+					<div class="col-lg-2 col-md-6 footer-links">
+                    	<h4>Useful Links</h4>
+                    		<ul>
+								<li><a href="https://www.kemdikbud.go.id/main/" target="blank">Kemendikbud</a></li>
+								<li><a href="https://en.polije.ac.id/" target="blank">Polije</a></li>
+								<li><a href="https://conference.polije.ac.id/" target="blank">Conference</a></li>
+								<li><a href="https://conference.polije.ac.id/icofa" target="blank">Previous ICoFA</a></li>
+							</ul>
+					</div>
+                    <!-- <div class="col-6 col-sm-4 col-lg-auto mb-3">
                         <h5 class="mb-5 text-white">ABOUT </h5>
                         <ul class="list-unstyled mb-md-4 mb-lg-0">
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">About Us</a></li>
@@ -55,18 +75,31 @@
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Product Manager</a></li>
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">The Team</a></li>
                         </ul>
-                    </div>
-                    <div class="col-6 col-sm-4 col-lg-auto mb-3">
+                    </div> -->
+					<div class="col-lg-4 col-md-6 footer-contact">
+						<h4>Contact Us</h4>
+						<p class="text-white">
+							<strong>Website:</strong> <a href="http://conference.polije.ac.id/icofa/2020">http://conference.polije.ac.id/icofa/2020</a><br>
+							<strong>Email:</strong> <a href="mailto:icofa@polije.ac.id">icofa@polije.ac.id</a><br>
+							<strong>Contact Person :</strong><br>
+							<strong>Khafidurrohman Agustianto, S.Pd, M.Eng</strong><br>
+							<span class="h5"><i class="ion-social-whatsapp-outline"></i> <a href="https://api.whatsapp.com/send?phone=6285646418027" target="_blank">+62 856-4641-8027</a></span><br>
+							<strong>I Gede Wiryawan, S.Kom., M.Kom.</strong><br>
+							<span class="h5"><i class="ion-social-whatsapp-outline"></i> <a href="https://api.whatsapp.com/send?phone=6285752131817" target="_blank">+62 857-5213-1817</a></span>
+						</p>
+                </div>
+                    <!-- <div class="col-6 col-sm-4 col-lg-auto mb-3">
                         <h5 class="mb-5 text-white">CONTACT </h5>
                         <ul class="list-unstyled mb-md-4 mb-lg-0">
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Contact Us</a></li>
+							
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Press Center</a></li>
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Careers</a></li>
                             <li class="mb-3"><a class="text-light text-decoration-none" href="#!">FAQ</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="row flex-center">
+                <!-- <div class="row flex-center">
                     <div class="col-auto my-4">
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item me-3"><a href="#!">
@@ -83,8 +116,8 @@
                                     </svg></a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="row justify-content-center">
+                </div> -->
+                <!-- <div class="row justify-content-center">
                     <div class="col-auto mb-2">
                         <p class="mb-0 fs--1 text-white my-2 text-center">&copy; This template is made with&nbsp;
                             <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#1F3A63" viewBox="0 0 16 16">
@@ -92,7 +125,7 @@
                             </svg>&nbsp;by&nbsp;<a class="text-white" href="https://themewagon.com/" target="_blank">ThemeWagon </a>
                         </p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>

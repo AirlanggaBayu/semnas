@@ -1,5 +1,5 @@
-        <section class="py-0" id="home">
-            <div class="bg-holder d-none d-sm-block" style="">
+<section class="py-0" id="home">
+            <div class="bg-holder d-none d-sm-block">
             </div>
             <!--/.bg-holder-->
 
@@ -78,67 +78,20 @@
             <div class="row text-center">
                 <h1>Pembicara</h1>
             </div>
-            
-            
-            <div class="row">
-            <div class="row text-center ">
-                <div class="col-md-6 offset-md-3">
-                    <div class="card" style="width: 450px;">
-                       <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000" ><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" >
-                        <div class="card-body">
-                            <p class="card-text">ini hanya mencoba saja</p>
-                        </div>
-                    </div>
-                
-                </div>
-               
-            </div>
-
-            <div class="row mt-5">
-            <div class="row text-center ">
-                <div class="col-md-6 offset-md-3">
-                    <div class="card" style="width: 450px;">
-                       <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000" ><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" >
-                        <div class="card-body">
-                            <p class="card-text">ini hanya mencoba saja</p>
-                        </div>
-                    </div>
-                
-                </div>
-               
-            </div>
-
-            <br>
-            <br>
-
-            <div class="row mt-5">
-                <div class="col">
                 <div class="row text-center ">
-                <?php foreach ($pembicara as $index => $pembicara) {?>
-                    <div class="col-md-4 mb-3">
-                        
-                         <div class="card">
-                                
-                            
-                             <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000" ><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" > 
-                                <div class="card-body">
-                                    <h3 class="card-text text-center"><?= $pembicara->nama_pembicara?></h3>
-                                    <p class="card-text text-center"><?= $pembicara->keterangan?></p>
-                                </div>
-                                        
-                            </div>
-                            
-                                
-                            </div>
-                        </div>
-                    <?php }?>
-            </div>
+            <?php foreach ($pembicara as $index => $pembicara) {?>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+						<div class="card-span-img " data-aos="flip-left" data-aos-duration="1000" ><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png" > 
+							<div class="card-body">
+								<h3 class="card-text text-center"><?= $pembicara->nama_pembicara?></h3>
+								<p class="card-text text-center"><?= $pembicara->keterangan?></p>
+							</div>
+						</div>
+                    </div>
                 </div>
+                <?php }?>
             </div>
-
-            
-    
-            
         </div>
 
                 
@@ -160,7 +113,7 @@
                 
                 <div class="card-body" >
                   <h4 class="text-center">Book of Abstract <i class="bi bi-book-half"></i> </h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">The Book of Abstract will be sent to all the author email.</p>
                 </div>
               </div>
             </div>
@@ -169,7 +122,7 @@
                 
                 <div class="card-body" >
                   <h4 class="text-center">Poster Guideline <i class="bi bi-journal-bookmark"></i></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">The Poster Guideline can be downloaded here.</p>
                 </div>
               </div>
             </div>
@@ -178,7 +131,7 @@
                 
                 <div class="card-body" >
                   <h4 class="text-center">Presentation Schedule <i class="bi bi-calendar2-day-fill"></i></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">The Presentation Schedule will be informed 3 weeks before the conference date.</p>
                 </div>
               </div>
             </div>
@@ -187,7 +140,7 @@
                
                 <div class="card-body" >
                 <h4 class="text-center">Program Schedule <i class="bi bi-calendar-month"></i></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">The Program Schedule will be informed 2 weeks before the conference date.</p>
                 </div>
               </div>
             </div>
@@ -196,7 +149,7 @@
                 
                 <div class="card-body">
                 <h4 class="text-center" >Awards <i class="bi bi-award"></i> </h4> 
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">The Best Presenter and Article will awarded soon after the conference.</p>
                 </div>
               </div>
             </div>
@@ -205,7 +158,7 @@
                 
                 <div class="card-body">
                 <h4 class="text-center">Submission System <i class="bi bi-cloud-arrow-up-fill"></i></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">This conference's submission system is using EasyChair.</p>
                 </div>
               </div>
             </div>
@@ -217,8 +170,8 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 text-center">
-                            <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Download & Upload Abstrak</h6>
-                            <p>Download dan Upload Abstrak disini </p>
+                            <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Download Templete</h6>
+                            <p>Download Templete di sini </p>
                         </div>
                     </div>
                 </div>
@@ -228,7 +181,7 @@
               <div class="card">
                 
                 <div class="card-body">
-                  <h4 class="text-center">Download Abstrak </h4>
+                  <h4 class="text-center">Unduh Templete Abstrak</h4>
                   <div class="d-grid gap-2">
                   <p class="card-text text-center text-1000">Unduh Template Abstrak</p>
                   <a href="" class="btn btn-success"><i class="bi bi-arrow-down-circle"></i>  Download</a>
@@ -241,10 +194,10 @@
               <div class="card">
                 
                 <div class="card-body">
-                  <h4 class="text-center">Upload Abstrak </h4>
+                  <h4 class="text-center">Unduh Templete Artikel</h4>
                   <div class="d-grid gap-2">
-                  <p class="card-text text-center text-1000"></p>
-                  <a href="" class="btn btn-warning"><i class="bi bi-arrow-up-circle"></i>  Upload</a>
+                  <p class="card-text text-center text-1000">Unduh Template Artikel</p>
+                  <a href="" class="btn btn-warning"><i class="bi bi-arrow-up-circle"></i>  Download</a>
                 </div>
               </div>
             </div>
