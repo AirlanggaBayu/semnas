@@ -35,8 +35,10 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
+                                        <th>Foto</th>
                                         <th>Pembicara</th>
                                         <th>Keterangan</th>
+                                        <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -47,6 +49,38 @@
                                             <td> <img src="<?= base_url('img/pembicara/') . $pembicaras->gambar_pembicara ?>" alt="" srcset="" style="max-width: 300px;max-height: 300px;"></td>
                                             <td><?= $pembicaras->nama_pembicara; ?></td>
                                             <td><?= $pembicaras->keterangan; ?></td>
+                                            <td>
+                                                <?php switch ($pembicaras->status) {
+
+                                                    case "1":
+
+                                                        echo "Opening Speech";
+
+                                                        break;
+
+                                                    case "2":
+
+                                                        echo "Keynote Speaker";
+
+                                                        break;
+
+                                                    case "3":
+
+                                                        echo "Guest Speaker";
+
+                                                        break;
+
+                                                    case "4":
+
+                                                        echo "Speaker";
+
+                                                        break;
+
+                                                    default:
+
+                                                        echo " ";
+                                                } ?>
+                                            </td>
                                             <td>
                                                 <div class=""><button class="btn btn-primary" id="edit" data-id="<?= $pembicaras->no ?>">Update</button>
                                                     <a href="<?= base_url('admin/pembicara/delete/') . $pembicaras->no ?>" class="btn btn-danger">Delete</a>
@@ -104,6 +138,15 @@
                         <label for="exampleInputPassword1">keterangan</label>
                         <input type="text" class="form-control" name="keterangan" placeholder="Masukkan Keterangan">
                     </div>
+                    <div class="form-group">
+                        <label for="">Status</label>
+                        <select name="status" id="" class="form-control">
+                            <option value="1">Opening Speech</option>
+                            <option value="2">Keynote Speaker</option>
+                            <option value="3">Guest Speaker</option>
+                            <option value="4">Speaker</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -139,6 +182,15 @@
                         <label for="exampleInputPassword1">keterangan</label>
                         <input type="text" class="form-control" name="keterangan" id="keterangan">
                     </div>
+                    <div class="form-group">
+                        <label for="">Status</label>
+                        <select name="status" id="status" class="form-control">
+                            <option value="1">Opening Speech</option>
+                            <option value="2">Keynote Speaker</option>
+                            <option value="3">Guest Speaker</option>
+                            <option value="4">Speaker</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -165,6 +217,7 @@
                     $('#kode').val(data[0]['no']);
                     $('#pembicara').val(data[0]['nama_pembicara']);
                     $('#keterangan').val(data[0]['keterangan']);
+                    $('#status').val(data[0]['status']);
                 }
             });
         })

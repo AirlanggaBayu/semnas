@@ -40,9 +40,15 @@ class Pembicara extends CI_Controller
         } else {
             $file = $this->upload->data();
             $pembicara = $this->input->post('pembicara');
+<<<<<<< Updated upstream
             $kategori = $this->input->post('kategori');
             $keterangan = $this->input->post('keterangan');
             $data = ['gambar_pembicara' => $file['file_name'], 'keterangan' => $keterangan, 'kategori' => $kategori,'nama_pembicara' => $pembicara];
+=======
+            $status = $this->input->post('status');
+            $keterangan = $this->input->post('keterangan');
+            $data = ['gambar_pembicara' => $file['file_name'], 'keterangan' => $keterangan, 'nama_pembicara' => $pembicara, 'status' => $status];
+>>>>>>> Stashed changes
             $this->M_admin->insertdata('pembicara', $data);
             redirect(base_url('admin/pembicara/'));
         }
@@ -65,7 +71,8 @@ class Pembicara extends CI_Controller
         if (empty($gambar)) {
             $pembicara = $this->input->post('pembicara');
             $keterangan = $this->input->post('keterangan');
-            $data = ['keterangan' => $keterangan, 'nama_pembicara' => $pembicara];
+            $status = $this->input->post('status');
+            $data = ['keterangan' => $keterangan, 'nama_pembicara' => $pembicara, 'status' => $status];
             $this->M_admin->updatedata('pembicara', ['no' =>  $this->input->post('kode')], $data);
             redirect(base_url('admin/pembicara/'));
         } else {
@@ -85,7 +92,8 @@ class Pembicara extends CI_Controller
                 $file = $this->upload->data();
                 $keterangan = $this->input->post('keterangan');
                 $pembicara = $this->input->post('pembicara');
-                $data = ['gambar_pembicara' => $file['file_name'], 'keterangan' => $keterangan, 'nama_pembicara' => $pembicara];
+                $status = $this->input->post('status');
+                $data = ['gambar_pembicara' => $file['file_name'], 'keterangan' => $keterangan, 'nama_pembicara' => $pembicara, 'status' => $status];
                 $this->M_admin->updatedata('pembicara', ['no' =>  $this->input->post('kode')], $data);
                 redirect(base_url('admin/pembicara/'));
             }
