@@ -40,15 +40,9 @@ class Pembicara extends CI_Controller
         } else {
             $file = $this->upload->data();
             $pembicara = $this->input->post('pembicara');
-<<<<<<< Updated upstream
-            $kategori = $this->input->post('kategori');
-            $keterangan = $this->input->post('keterangan');
-            $data = ['gambar_pembicara' => $file['file_name'], 'keterangan' => $keterangan, 'kategori' => $kategori,'nama_pembicara' => $pembicara];
-=======
             $status = $this->input->post('status');
             $keterangan = $this->input->post('keterangan');
             $data = ['gambar_pembicara' => $file['file_name'], 'keterangan' => $keterangan, 'nama_pembicara' => $pembicara, 'status' => $status];
->>>>>>> Stashed changes
             $this->M_admin->insertdata('pembicara', $data);
             redirect(base_url('admin/pembicara/'));
         }

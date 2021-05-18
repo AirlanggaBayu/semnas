@@ -27,9 +27,9 @@
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
 
-        
 
-            
+
+
         </nav>
         <!-- /.navbar -->
 
@@ -106,7 +106,15 @@
                                 </p>
                             </a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a href="<?= base_url('admin/sponsor') ?>" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Sponsor
+                                </p>
+                            </a>
+                        </li>
+
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
