@@ -204,6 +204,26 @@
         </div>  
         </section>
 
+
+
+        <section class="py-5">
+        <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 text-center">
+                            <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Sponsor</h6>
+                        </div>
+                    </div>
+        </div>
+        <div class="container">
+            <div class="col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                    <center><img src="<?= base_url()?>/assets/public/assets/img/logo-polije.png" class="card-img" alt="..." style="max-width: 120;"></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
        
        
         <!-- <section class="py-5">
