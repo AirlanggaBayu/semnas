@@ -5,6 +5,10 @@ class M_admin extends CI_Model
     {
         return $this->db->get($tabel)->result();
     }
+    function pembicara()
+    {
+        return $this->db->order_by('status', 'ASC')->get('pembicara')->result();
+    }
     function getjoin($tabel, $tabel1, $join)
     {
         return $this->db->from($tabel)->join($tabel1, $join)->get()->result();
@@ -29,7 +33,8 @@ class M_admin extends CI_Model
     {
         $this->db->delete($tabel, $where);
     }
-    function getdataarray($tabel){
+    function getdataarray($tabel)
+    {
         return $this->db->get($tabel)->row_array();
     }
 }

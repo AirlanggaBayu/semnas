@@ -7,7 +7,7 @@ class Pembicara extends CI_Controller
         $this->load->model('M_admin');
         $this->load->helper('string');
         if (empty($this->session->userdata('is_login'))) {
-            redirect('admin/login');
+            redirect('admin');
         }
     }
     public function index()

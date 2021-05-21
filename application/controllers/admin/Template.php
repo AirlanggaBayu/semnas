@@ -6,7 +6,7 @@ class Template extends CI_Controller
         parent::__construct();
         $this->load->model('M_admin');
         if (empty($this->session->userdata('is_login'))) {
-            redirect('admin/login');
+            redirect('admin');
         }
     }
     public function index()
