@@ -8,16 +8,44 @@
     <!--/.bg-holder-->
 
     <div class="container">
-        <div class="row align-items-center min-vh-75 min-vh-md-100">
+        <div class="row">
             <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
-                <h1 class="mt-6 mb-sm-4 display-2 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-8">Seminar Nasional 2021 <br class="d-block d-lg-none d-xl-block" />Politeknik Negeri Jember</h1>
+             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h1 class="mt-6 mb-sm-4 display-2 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-8">Seminar Nasional 2021 <br class="d-block d-lg-none d-xl-block" />Politeknik Negeri Jember</h1>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h1 class="mt-6 mb-sm-4 display-2 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-8">Menuju Tak Terbatas <br class="d-block d-lg-none d-xl-block" />Dan Melampauinya</h1>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+
             <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
-                <img src="<?= base_url() ?>/assets/public/assets/img/logo-polije.png" width="450" alt="" data-aos="fade-down" data-aos-duration="1000" srcset="">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="<?= base_url() ?>/assets/public/assets/img/logo-polije.png" width="300" alt="" data-aos="fade-down" data-aos-duration="500" srcset="" class="d-block w-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="<?= base_url(); ?>/assets/public/assets/img/illustrations/passion.png" width="300" alt=""  data-aos="fade-down" data-aos-duration="500" srcset="" class="d-block w-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="<?= base_url() ?>/assets/public/assets/img/logo-polije.png" width="300" alt="" data-aos="fade-down" data-aos-duration="500" srcset="" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
-</section>
+
+    
 <section class="py-5">
     <div class="bg-holder" style="background-image:url(<?= base_url(); ?>/assets/public/assets/img/illustrations/bg.png);background-position:left top;background-size:initial;margin-top:-180px;">
     </div>
