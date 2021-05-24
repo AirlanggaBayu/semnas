@@ -59,10 +59,10 @@
 					<div class="col-lg-2 col-md-6 footer-links">
                     	<h4>Useful Links</h4>
                     		<ul>
-								<li><a href="https://www.kemdikbud.go.id/main/" target="blank">Kemendikbud</a></li>
+								<li><a href="https://www.kemdikbud.go.id/main/" target="blank">Kemdikbud</a></li>
 								<li><a href="https://en.polije.ac.id/" target="blank">Polije</a></li>
+								<li><a href="https://peternakan.polije.ac.id/" target="blank">Peternakan</a></li>
 								<li><a href="https://conference.polije.ac.id/" target="blank">Conference</a></li>
-								<li><a href="https://conference.polije.ac.id/icofa" target="blank">Previous ICoFA</a></li>
 							</ul>
 					</div>
                     <!-- <div class="col-6 col-sm-4 col-lg-auto mb-3">
@@ -79,13 +79,14 @@
 					<div class="col-lg-4 col-md-6 footer-contact">
 						<h4>Contact Us</h4>
 						<p class="text-white">
-							<strong>Website:</strong> <a href="http://conference.polije.ac.id/icofa/2020">http://conference.polije.ac.id/icofa/2020</a><br>
-							<strong>Email:</strong> <a href="mailto:icofa@polije.ac.id">icofa@polije.ac.id</a><br>
-							<strong>Contact Person :</strong><br>
-							<strong>Khafidurrohman Agustianto, S.Pd, M.Eng</strong><br>
-							<span class="h5"><i class="ion-social-whatsapp-outline"></i> <a href="https://api.whatsapp.com/send?phone=6285646418027" target="_blank">+62 856-4641-8027</a></span><br>
-							<strong>I Gede Wiryawan, S.Kom., M.Kom.</strong><br>
-							<span class="h5"><i class="ion-social-whatsapp-outline"></i> <a href="https://api.whatsapp.com/send?phone=6285752131817" target="_blank">+62 857-5213-1817</a></span>
+							<strong>Website:</strong> <a href="http://conference.polije.ac.id/caas/2021">http://conference.polije.ac.id/caas/2021</a><br>
+							<strong>Email:</strong> <a href="mailto:semnas_peternakan@polije.ac.id">semnas_peternakan@polije.ac.id</a><br>
+							<strong>Webbinar Contact Person</strong><br>
+							<strong>Mira Andriani, S.Pt., M.P.</strong><br>
+							<span class="h5"><i class="ion-social-whatsapp-outline"></i> <a href="https://api.whatsapp.com/send?phone=62856xxxxxxxx" target="_blank">+62 856-xxxx-xxxx</a></span><br>
+							<strong>Paralel Session Contact Person</strong><br>
+							<strong>Reikha Rahmasari, S.Pt., M.Si.</strong><br>
+							<span class="h5"><i class="ion-social-whatsapp-outline"></i> <a href="https://api.whatsapp.com/send?phone=62857xxxxxxxx" target="_blank">+62 857-xxxx-xxxx</a></span>
 						</p>
                 </div>
                     <!-- <div class="col-6 col-sm-4 col-lg-auto mb-3">

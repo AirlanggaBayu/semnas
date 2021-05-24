@@ -50,12 +50,12 @@
                 <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
                         <li class="nav-item px-1"><a class="nav-link fw-medium" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#tentang">Tentang Kami</a></li>
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#jadwal">Jadwal</a></li>
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#pembicara">Pembicara</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#tentang">About Us</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#jadwal">Schedule</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#pembicara">Speaker</a></li>
                         <li class="nav-item px-1"><a class="nav-link fw-medium" href="#call">Call of Paper</a></li>
                         <li class="nav-item px-1"><a class="nav-link fw-medium" href="#template">Templete</a></li>
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#registrasi">Registrasi</a></li>
+                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#registrasi">Registration</a></li>
                     </ul>
                 </div>
             </div>

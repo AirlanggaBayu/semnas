@@ -44,7 +44,7 @@
         <div class="row flex-center">
             <div class="col-md-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4" src="<?= base_url(); ?>/assets/public/assets/img/illustrations/passion.png" width="450" alt="" /></div>
             <div class="col-md-5 text-center text-md-start">
-                <h6 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm">Tentang Seminar</h6>
+                <h6 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm">About Conference</h6>
                 <p class="my-4 pe-xl-8"><?php echo $profil['keterangan']; ?></p>
             </div>
         </div>
@@ -63,14 +63,14 @@
             <div class="row align-items-center">
                 <div class="col-12 text-center">
                     <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Jadwal</h6>
-                    <p>Jadwal Kegiatan</p>
+                    <p>Important Dates</p>
                 </div>
             </div>
             <table class="table">
                 <tbody>
                     <tr>
-                        <td>Tanggal</td>
-                        <td>Jadwal</td>
+                        <td>Date</td>
+                        <td>Schedule</td>
                     <tr>
                         <?php foreach ($jadwal as $index => $jadwals) { ?>
                             <td><?= $jadwals->tanggal ?></td>
@@ -93,7 +93,7 @@
 <!-- ============================================-->
 <div class="container" id="pembicara">
     <div class="row text-center">
-        <h1>Pembicara</h1>
+        <h1>Speaker</h1>
     </div>
     <div class="row text-center ">
         <?php foreach ($pembicara as $index => $pembicara) { ?>
@@ -138,8 +138,8 @@
                 <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
 
                     <div class="card-body">
-                        <h4 class="text-center">Poster Guideline <i class="bi bi-journal-bookmark"></i></h4>
-                        <p class="card-text">The Poster Guideline can be downloaded here.</p>
+                        <h4 class="text-center">Publication Fee<i class="bi bi-journal-bookmark"></i></h4>
+                        <p class="card-text">The publication fee is free for early-bird submission. It's charged 75.000 IDR for regular submission</p>
                     </div>
                 </div>
             </div>
@@ -188,32 +188,29 @@
             <div class="row align-items-center">
                 <div class="col-12 text-center">
                     <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Download Templete</h6>
-                    <p>Download Templete di sini </p>
                 </div>
             </div>
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-md-4 mb-5">
+            <!-- <div class="col-md-4 mb-5">
                 <div class="card">
-
                     <div class="card-body">
-                        <h4 class="text-center">Unduh Templete Abstrak</h4>
+                        <h4 class="text-center">Abstract Templete</h4>
                         <div class="d-grid gap-2">
-                            <p class="card-text text-center text-1000">Unduh Template Abstrak</p>
+                            <p class="card-text text-center text-1000">Download Templete Abstract</p>
                             <a href="" class="btn btn-success"><i class="bi bi-arrow-down-circle"></i> Download</a>
                         </div>
-
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-md-4 mb-5">
                 <div class="card">
 
                     <div class="card-body">
-                        <h4 class="text-center">Unduh Templete Artikel</h4>
+                        <h4 class="text-center">Full Paper Templete</h4>
                         <div class="d-grid gap-2">
-                            <p class="card-text text-center text-1000">Unduh Template Artikel</p>
+                            <p class="card-text text-center text-1000">Download here</p>
                             <a href="" class="btn btn-warning"><i class="bi bi-arrow-up-circle"></i> Download</a>
                         </div>
                     </div>
@@ -231,12 +228,14 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="row text-center">
         <?php foreach ($sponsor as $sponsors) { ?>
             <div class="col-md-4 col-lg-4">
                 <div class="card">
                     <div class="card-body">
-                        <center><img src="<?= base_url('img/sponsor/') . $sponsors->gambar ?>" class="card-img" alt="..." style="max-width: 120;"></center>
+                        <center>
+						<img src="<?= base_url('img/sponsor/') . $sponsors->gambar ?>" class="card-img" alt="..." style="max-width: 120;">
+						</center>
                     </div>
                 </div>
             </div>
