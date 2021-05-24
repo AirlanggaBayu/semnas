@@ -21,7 +21,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class=" col-9">
+                <div class=" col-12">
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Data Pembicara</h3>
@@ -38,7 +38,7 @@
                                         <th>Foto</th>
                                         <th>Pembicara</th>
                                         <th>Keterangan</th>
-                                        <th>Status</th>
+                                        <th>Kategori Pembicara</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -121,12 +121,12 @@
                         <input type="file" class="form-control-file" name="gambar" id="exampleFormControlFile1">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Pembicara</label>
+                        <label>Nama Pembicara</label>
                         <input type="text" class="form-control" name="pembicara" aria-describedby="emailHelp" placeholder="Masukkan Pembicara">
                     </div>
-                    <div class="div">
+                    <div class="form-group">
                         <label for="exampleInputEmail1">Kategori Pembicara</label>
-                        <select class="custom-select" name="" id="">
+                        <select class="custom-select" name="status" id="">
                             <option selected>Pilih kategori pembicara</option>
                             <option value="Opening Speech">Opening Speech</option>
                             <option value="Keynote Speech">Keynote Speech</option>
@@ -137,15 +137,6 @@
                     <div class="form-group">
                         <label for="exampleInputPassword1">keterangan</label>
                         <input type="text" class="form-control" name="keterangan" placeholder="Masukkan Keterangan">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Status</label>
-                        <select name="status" id="" class="form-control">
-                            <option value="1">Opening Speech</option>
-                            <option value="2">Keynote Speaker</option>
-                            <option value="3">Guest Speaker</option>
-                            <option value="4">Speaker</option>
-                        </select>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -175,15 +166,11 @@
                         <input type="file" class="form-control-file" name="gambar" id="exampleFormControlFile1">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Pembicara</label>
+                        <label for="exampleInputEmail1">Nama Pembicara</label>
                         <input type="text" class="form-control" name="pembicara" id="pembicara" aria-describedby="emailHelp" placeholder="Masukkan Pembicara">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">keterangan</label>
-                        <input type="text" class="form-control" name="keterangan" id="keterangan">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Status</label>
+                        <label for="">Kategori Pembicara</label>
                         <select name="status" id="status" class="form-control">
                             <option value="1">Opening Speech</option>
                             <option value="2">Keynote Speaker</option>
@@ -191,6 +178,11 @@
                             <option value="4">Speaker</option>
                         </select>
                     </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">keterangan</label>
+                        <input type="text" class="form-control" name="keterangan" id="keterangan">
+                    </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
