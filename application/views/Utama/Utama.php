@@ -110,7 +110,7 @@
         <?php foreach ($pembicara as $index => $pembicara) { ?>
             <div class="col-md-4 mb-3">
                 <div class="card">
-                    <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png">
+                    <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url('img/pembicara/') . $pembicara->gambar_pembicara">
                         <div class="card-body">
                             <h3 class="card-text text-center"><?= $pembicara->nama_pembicara ?></h3>
                             <p class="card-text text-center"><?= $pembicara->keterangan ?></p>
