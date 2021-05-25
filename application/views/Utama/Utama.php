@@ -10,36 +10,90 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <h1 class="mt-6 mb-sm-4 display-2 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-8">Seminar Nasional 2021 <br class="d-block d-lg-none d-xl-block" />Politeknik Negeri Jember</h1>
-                        </div>
-
-                        <div class="carousel-item">
-                            <h1 class="mt-6 mb-sm-4 display-2 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-8">Menuju Tak Terbatas <br class="d-block d-lg-none d-xl-block" />Dan Melampauinya</h1>
-                        </div>
-                    </div>
+                
+    
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <?php
+                $i =0;
+                foreach ($slider as $index => $keterangana) {
+                    $actives='';
+                    if($i == 0){
+                        $actives='active';
+                    }
+                
+                ?>
+                    <li data-target="#myCarousel" data-slide-to="<?= $i; ?>" class="<?= $actives;?>"> </li>
+                    <?php $i++; } ?>
+                <div class="carousel-inner">
+                    <?php
+                        $i = 0;
+                        foreach ($slider as $index => $keterangana) {
+                            $actives='';
+                            if($i == 0){
+                                    $actives='active';
+                                }
+                            
+                            ?>
+                <div class="carousel-item <?= $actives;?>"">
+                <h1><?= $keterangana->keterangan;?></h1>
                 </div>
+                <?php $i++; }?>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+   
 
             </div>
 
-            <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="<?= base_url() ?>/assets/public/assets/img/logo-polije.png" width="300" alt="" data-aos="fade-down" data-aos-duration="500" srcset="" class="d-block w-100" alt="...">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="<?= base_url(); ?>/assets/public/assets/img/illustrations/passion.png" width="300" alt="" data-aos="fade-down" data-aos-duration="500" srcset="" class="d-block w-100" alt="...">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="<?= base_url() ?>/assets/public/assets/img/logo-polije.png" width="300" alt="" data-aos="fade-down" data-aos-duration="500" srcset="" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
+        <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
+                
+   
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <?php
+                $i =0;
+                foreach ($slider as $index => $gambar) {
+                    $actives='';
+                    if($i == 0){
+                        $actives='active';
+                    }
+                
+                ?>
+                    <li data-target="#myCarousel" data-slide-to="<?= $i; ?>" class="<?= $actives;?>"> </li>
+                    <?php $i++; } ?>
+                <div class="carousel-inner">
+                    <?php
+                        $i = 0;
+                        foreach ($slider as $index => $gambar) {
+                            $actives='';
+                            if($i == 0){
+                                    $actives='active';
+                                }
+                            
+                            ?>
+                <div class="carousel-item <?= $actives;?>"">
+                <img src="<?= base_url('img/slider/') . $gambar->gambar_slider ?>" width="300" alt="...">
                 </div>
+                <?php $i++; }?>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+  
 
             </div>
         </div>
@@ -107,55 +161,48 @@
             <h1>Speaker</h1>
         </div>
         <!-- ini gambar -->
-        <?php foreach ($pembicara as $tamu) {
-            if ($tamu->status !== '4') {
-        ?>
-                <div class="row text-center mb-3">
-                    <div class="col-md-6 offset-md-3">
-                        <div class="col-md-4 mb-3" style="width: 600px;">
-                            <div class="card">
-                                <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url('img/pembicara/') . $tamu->gambar_pembicara; ?>" style="max-width: 200px;max-height:200px;">
-                                    <div class="card-body">
-                                        <h3 class="card-text text-center"><?= $tamu->nama_pembicara; ?></h3>
-                                        <p class="card-text text-center"><?= $tamu->keterangan; ?></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        <?php }
-        } ?>
-        <!-- <div class="row text-center mb-3">
-            <div class="col-md-6 offset-md-3">
-                <div class="col-md-4 mb-3" style="width: 600px;">
-                    <div class="card">
-                        <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png">
-                            <div class="card-body">
-                                <h3 class="card-text text-center">Nama</h3>
-                                <p class="card-text text-center">keterangan</p>
-                            </div>
+        <div class="row text-center mb-3">
+        <div class="col-md-6 offset-md-3">
+            <div class="col-md-4 mb-3" style="width: 600px;">
+                <div class="card">
+                    <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png">
+                        <div class="card-body">
+                            <h3 class="card-text text-center">Nama</h3>
+                            <p class="card-text text-center">keterangan</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
+    </div>
+
+    <div class="row text-center mb-3">
+        <div class="col-md-6 offset-md-3">
+            <div class="col-md-4 mb-3" style="width: 600px;">
+                <div class="card">
+                    <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png">
+                        <div class="card-body">
+                            <h3 class="card-text text-center">Nama</h3>
+                            <p class="card-text text-center">keterangan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <div class="row text-center ">
-            <?php foreach ($pembicara as $index => $pembicaras) {
-                if ($pembicaras->status === '4') {
-            ?>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url('img/pembicara/') . $pembicaras->gambar_pembicara ?>" style="max-width: 300px;max-height:300px">
-                                <div class="card-body">
-                                    <h3 class="card-text text-center"><?= $pembicaras->nama_pembicara ?></h3>
-                                    <p class="card-text text-center"><?= $pembicaras->keterangan ?></p>
-                                </div>
+            <?php foreach ($pembicara as $index => $pembicara) { ?>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url('img/pembicara/') . $pembicara->gambar_pembicara ?>" style="max-width: 300px;max-height:300px">
+                            <div class="card-body">
+                                <h3 class="card-text text-center"><?= $pembicara->nama_pembicara ?></h3>
+                                <p class="card-text text-center"><?= $pembicara->keterangan ?></p>
                             </div>
                         </div>
                     </div>
-            <?php }
-            } ?>
+                </div>
+            <?php } ?>
         </div>
     </div>
 
@@ -291,6 +338,49 @@
         </div>
     </section>
 
+   
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <?php
+                $i =0;
+                foreach ($slider as $index => $gambar) {
+                    $actives='';
+                    if($i == 0){
+                        $actives='active';
+                    }
+                
+                ?>
+                    <li data-target="#myCarousel" data-slide-to="<?= $i; ?>" class="<?= $actives;?>"> </li>
+                    <?php $i++; } ?>
+                <div class="carousel-inner">
+                    <?php
+                        $i = 0;
+                        foreach ($slider as $index => $gambar) {
+                            $actives='';
+                            if($i == 0){
+                                    $actives='active';
+                                }
+                            
+                            ?>
+                <div class="carousel-item <?= $actives;?>"">
+                <img src="<?= base_url('img/slider/') . $gambar->gambar_slider ?>" width="300" alt="...">
+                </div>
+                <?php $i++; }?>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+    </div>
+
+   
+    <!-- dfc -->
 
     <!-- <section class="py-5">
             <div class="bg-holder d-none d-sm-block" style="background-image:url(<?= base_url(); ?>/assets/public/assets/img/illustrations/category-bg.png);background-position:right top;background-size:200px 320px;">
