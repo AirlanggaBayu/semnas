@@ -15,6 +15,7 @@ class Utama extends CI_Controller
         $data['pembicara'] = $this->M_admin->pembicara();
         $data['profil'] = $this->M_admin->getdataarray('tentang_kami');
         $data['sponsor'] = $this->M_admin->getdata('sponsor');
+        $data['slider'] = $this->M_admin->getdata('slider');
         $this->load->view('Template/Header');
         $this->load->view('Utama/utama', $data);
         $this->load->view('Template/Footer');

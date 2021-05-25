@@ -5,12 +5,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Pembicara</h1>
+                    <h1>Slider</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Pembicara</li>
+                        <li class="breadcrumb-item active">Slider</li>
                     </ol>
                 </div>
             </div>
@@ -26,12 +26,12 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class=" col-12">
+                <div class=" col-9">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Data Pembicara</h3>
+                            <h3 class="card-title">Data Slider</h3>
                             <div class="float-right">
-                                <button class="btn btn-primary text-right" data-toggle="modal" data-target="#create">Buat Pembicara</button>
+                                <button class="btn btn-primary text-right" data-toggle="modal" data-target="#create">Buat Slider</button>
                             </div>
                         </div>
                         <!-- /.card-header -->
@@ -41,54 +41,19 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Foto</th>
-                                        <th>Pembicara</th>
                                         <th>Keterangan</th>
-                                        <th>Kategori Pembicara</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($pembicara as $index => $pembicaras) { ?>
+                                    <?php foreach ($slider as $index => $sliders) { ?>
                                         <tr>
                                             <td><?= $index + 1 ?></td>
-                                            <td> <img src="<?= base_url('img/pembicara/') . $pembicaras->gambar_pembicara ?>" alt="" srcset="" style="max-width: 300px;max-height: 300px;"></td>
-                                            <td><?= $pembicaras->nama_pembicara; ?></td>
-                                            <td><?= $pembicaras->keterangan; ?></td>
+                                            <td> <img src="<?= base_url('img/slider/') . $sliders->gambar_slider ?>" alt="" srcset="" style="max-width: 300px;max-height: 300px;"></td>
+                                            <td><?= $sliders->keterangan; ?></td>
                                             <td>
-                                                <?php switch ($pembicaras->status) {
-
-                                                    case "1":
-
-                                                        echo "Opening Speech";
-
-                                                        break;
-
-                                                    case "2":
-
-                                                        echo "Keynote Speaker";
-
-                                                        break;
-
-                                                    case "3":
-
-                                                        echo "Guest Speaker";
-
-                                                        break;
-
-                                                    case "4":
-
-                                                        echo "Speaker";
-
-                                                        break;
-
-                                                    default:
-
-                                                        echo " ";
-                                                } ?>
-                                            </td>
-                                            <td>
-                                                <div class=""><button class="btn btn-primary" id="edit" data-id="<?= $pembicaras->no ?>">Update</button>
-                                                    <a href="<?= base_url('admin/pembicara/delete/') . $pembicaras->no ?>" class="btn btn-danger">Delete</a>
+                                                <div class=""><button class="btn btn-primary" id="edit" data-id="<?= $sliders->id ?>">Update</button>
+                                                    <a href="<?= base_url('admin/slider/delete/') . $sliders->id ?>" class="btn btn-danger">Delete</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -114,30 +79,16 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Buat Pembicara</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Buat Slider</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="<?= base_url('admin/pembicara/simpan') ?>" method="POST" enctype="multipart/form-data">
+            <form action="<?= base_url('admin/slider/simpan') ?>" method="POST" enctype="multipart/form-data">
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="exampleFormControlFile1">Gambar</label>
                         <input type="file" class="form-control-file" name="gambar" id="exampleFormControlFile1">
-                    </div>
-                    <div class="form-group">
-                        <label>Nama Pembicara</label>
-                        <input type="text" class="form-control" name="pembicara" aria-describedby="emailHelp" placeholder="Masukkan Pembicara">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Kategori Pembicara</label>
-                        <select class="custom-select" name="status" id="">
-                            <option selected>Pilih kategori pembicara</option>
-                            <option value="1">Opening Speech</option>
-                            <option value="2">Keynote Speech</option>
-                            <option value="3">Guest Speech</option>
-                            <option value="4">Speaker</option>
-                        </select>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">keterangan</label>
@@ -158,12 +109,12 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Buat Pembicara</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Buat Slider</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="<?= base_url('admin/pembicara/update') ?>" method="POST" enctype="multipart/form-data">
+            <form action="<?= base_url('admin/slider/update') ?>" method="POST" enctype="multipart/form-data">
                 <div class="modal-body">
                     <input type="hidden" id="kode" name="kode">
                     <div class="form-group">
@@ -171,23 +122,9 @@
                         <input type="file" class="form-control-file" name="gambar" id="exampleFormControlFile1">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Nama Pembicara</label>
-                        <input type="text" class="form-control" name="pembicara" id="pembicara" aria-describedby="emailHelp" placeholder="Masukkan Pembicara">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Kategori Pembicara</label>
-                        <select name="status" id="status" class="form-control">
-                            <option value="1">Opening Speech</option>
-                            <option value="2">Keynote Speaker</option>
-                            <option value="3">Guest Speaker</option>
-                            <option value="4">Speaker</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label for="exampleInputPassword1">keterangan</label>
                         <input type="text" class="form-control" name="keterangan" id="keterangan">
                     </div>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -204,17 +141,15 @@
             var id = $(this).data('id');
             console.log(id);
             $.ajax({
-                url: "<?= base_url('admin/pembicara') ?>/getpembicara",
+                url: "<?= base_url('admin/slider') ?>/getslider",
                 dataType: "JSON",
                 data: {
                     id: id
                 },
                 success: function(data) {
                     console.log(data);
-                    $('#kode').val(data[0]['no']);
-                    $('#pembicara').val(data[0]['nama_pembicara']);
+                    $('#kode').val(data[0]['id']);
                     $('#keterangan').val(data[0]['keterangan']);
-                    $('#status').val(data[0]['status']);
                 }
             });
         })

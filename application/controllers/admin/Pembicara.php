@@ -35,7 +35,7 @@ class Pembicara extends CI_Controller
         $this->load->library('upload', $config);
         if (!$this->upload->do_upload('gambar')) {
             $error = array('error' => $this->upload->display_errors());
-            $this->session->set_flashdata('error', $error['error']);
+            $this->session->set_flashdata('error', 'Gambar Harap Di Upload!!!');
             redirect(base_url('admin/pembicara/'));
         } else {
             $file = $this->upload->data();

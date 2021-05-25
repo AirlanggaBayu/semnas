@@ -107,48 +107,55 @@
             <h1>Speaker</h1>
         </div>
         <!-- ini gambar -->
-        <div class="row text-center mb-3">
-        <div class="col-md-6 offset-md-3">
-            <div class="col-md-4 mb-3" style="width: 600px;">
-                <div class="card">
-                    <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png">
-                        <div class="card-body">
-                            <h3 class="card-text text-center">Nama</h3>
-                            <p class="card-text text-center">keterangan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row text-center mb-3">
-        <div class="col-md-6 offset-md-3">
-            <div class="col-md-4 mb-3" style="width: 600px;">
-                <div class="card">
-                    <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png">
-                        <div class="card-body">
-                            <h3 class="card-text text-center">Nama</h3>
-                            <p class="card-text text-center">keterangan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="row text-center ">
-            <?php foreach ($pembicara as $index => $pembicara) { ?>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url('img/pembicara/') . $pembicara->gambar_pembicara ?>" style="max-width: 300px;max-height:300px">
-                            <div class="card-body">
-                                <h3 class="card-text text-center"><?= $pembicara->nama_pembicara ?></h3>
-                                <p class="card-text text-center"><?= $pembicara->keterangan ?></p>
+        <?php foreach ($pembicara as $tamu) {
+            if ($tamu->status !== '4') {
+        ?>
+                <div class="row text-center mb-3">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="col-md-4 mb-3" style="width: 600px;">
+                            <div class="card">
+                                <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url('img/pembicara/') . $tamu->gambar_pembicara; ?>" style="max-width: 200px;max-height:200px;">
+                                    <div class="card-body">
+                                        <h3 class="card-text text-center"><?= $tamu->nama_pembicara; ?></h3>
+                                        <p class="card-text text-center"><?= $tamu->keterangan; ?></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            <?php } ?>
+        <?php }
+        } ?>
+        <!-- <div class="row text-center mb-3">
+            <div class="col-md-6 offset-md-3">
+                <div class="col-md-4 mb-3" style="width: 600px;">
+                    <div class="card">
+                        <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png">
+                            <div class="card-body">
+                                <h3 class="card-text text-center">Nama</h3>
+                                <p class="card-text text-center">keterangan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="row text-center ">
+            <?php foreach ($pembicara as $index => $pembicaras) {
+                if ($pembicaras->status === '4') {
+            ?>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url('img/pembicara/') . $pembicaras->gambar_pembicara ?>" style="max-width: 300px;max-height:300px">
+                                <div class="card-body">
+                                    <h3 class="card-text text-center"><?= $pembicaras->nama_pembicara ?></h3>
+                                    <p class="card-text text-center"><?= $pembicaras->keterangan ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <?php }
+            } ?>
         </div>
     </div>
 
