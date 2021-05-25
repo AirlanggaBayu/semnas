@@ -107,6 +107,35 @@
             <h1>Speaker</h1>
         </div>
         <!-- ini gambar -->
+        <div class="row text-center mb-3">
+        <div class="col-md-6 offset-md-3">
+            <div class="col-md-4 mb-3" style="width: 600px;">
+                <div class="card">
+                    <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png">
+                        <div class="card-body">
+                            <h3 class="card-text text-center">Nama</h3>
+                            <p class="card-text text-center">keterangan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center mb-3">
+        <div class="col-md-6 offset-md-3">
+            <div class="col-md-4 mb-3" style="width: 600px;">
+                <div class="card">
+                    <div class="card-span-img " data-aos="flip-left" data-aos-duration="1000"><img src="<?= base_url(); ?>/assets/public/assets/img/gallery/user-1.png">
+                        <div class="card-body">
+                            <h3 class="card-text text-center">Nama</h3>
+                            <p class="card-text text-center">keterangan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <div class="row text-center ">
             <?php foreach ($pembicara as $index => $pembicara) { ?>
                 <div class="col-md-4 mb-3">
@@ -223,7 +252,7 @@
                             <h4 class="text-center">Full Paper Templete</h4>
                             <div class="d-grid gap-2">
                                 <p class="card-text text-center text-1000">Download here</p>
-                                <a href="" class="btn btn-warning"><i class="bi bi-arrow-up-circle"></i> Download</a>
+                                <a href="" class="btn btn-success"><i class="bi bi-arrow-down-circle"></i> Download</a>
                             </div>
                         </div>
                     </div>
