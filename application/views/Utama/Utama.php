@@ -106,6 +106,7 @@
         <div class="row text-center">
             <h1>Speaker</h1>
         </div>
+        <!-- ini gambar -->
         <div class="row text-center ">
             <?php foreach ($pembicara as $index => $pembicara) { ?>
                 <div class="col-md-4 mb-3">
