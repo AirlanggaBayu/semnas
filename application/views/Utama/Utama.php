@@ -12,7 +12,7 @@
             <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
                 
     
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <?php
                 $i =0;
                 foreach ($slider as $index => $keterangana) {
@@ -34,20 +34,13 @@
                                 }
                             
                             ?>
-                <div class="carousel-item <?= $actives;?>"">
+                <div class="carousel-item <?= $actives;?>"data-bs-interval="7000">
                 <h1><?= $keterangana->keterangan;?></h1>
                 </div>
                 <?php $i++; }?>
                 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+           
             </div>
    
 
@@ -56,7 +49,7 @@
         <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
                 
    
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <?php
                 $i =0;
                 foreach ($slider as $index => $gambar) {
@@ -78,23 +71,13 @@
                                 }
                             
                             ?>
-                <div class="carousel-item <?= $actives;?>"">
-                <img src="<?= base_url('img/slider/') . $gambar->gambar_slider ?>" width="300" alt="...">
+                <div class="carousel-item <?= $actives;?>" data-bs-interval="7000">
+                <img src="<?= base_url('img/slider/') . $gambar->gambar_slider ?>" width="300" >
                 </div>
                 <?php $i++; }?>
                 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-  
-
+            
             </div>
         </div>
     </div>
