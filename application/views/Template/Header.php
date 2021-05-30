@@ -27,36 +27,40 @@
     <!-- ===============================================-->
     <link href="<?= base_url('assets/public/assets/css/theme.css'); ?>" rel="stylesheet" />
 
+
     <!-- BOOTSTRAP ICON -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <body>
-
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
-            <div class="container"><a class="navbar-brand d-flex align-items-center fw-bolder fs-2 fst-italic" href="#">
-                    <div class="text-info">CAAS-2021</div>
-                    
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#tentang">About Us</a></li>
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#jadwal">Schedule</a></li>
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#pembicara">Speaker</a></li>
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#call">Call of Paper</a></li>
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#template">Templete</a></li>
-                        <li class="nav-item px-1"><a class="nav-link fw-medium" href="#registrasi">Registration</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
+		<div class="bg-holder" style="background-image:url(<?= base_url(); ?>/assets/public/assets/img/illustrations/footer-bg.png);background-position:center;background-size:cover;">
+		</div>
+		<!--/.bg-holder-->
+
+            <div class="container">
+				<a class="navbar-brand d-flex align-items-center fw-bolder fs-2 fst-italic" href="#">
+					<div class="text-info">CAAS-2021</div>
+				</a>
+				<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+						<li class="nav-item px-1"><a class="nav-link fw-medium" aria-current="page" href="#">Home</a></li>
+						<li class="nav-item px-1"><a class="nav-link fw-medium" href="#tentang">About Us</a></li>
+						<li class="nav-item px-1"><a class="nav-link fw-medium" href="#jadwal">Schedule</a></li>
+						<li class="nav-item px-1"><a class="nav-link fw-medium" href="#pembicara">Speaker</a></li>
+						<li class="nav-item px-1"><a class="nav-link fw-medium" href="#call">Call of Paper</a></li>
+						<li class="nav-item px-1"><a class="nav-link fw-medium" href="#template">Templete</a></li>
+						<li class="nav-item px-1"><a class="nav-link fw-medium" href="#registrasi">Registration</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
