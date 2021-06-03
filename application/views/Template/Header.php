@@ -40,7 +40,7 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
 
 		<div class="bg-holder" style="background-image:url(<?= base_url(); ?>/assets/public/assets/img/illustrations/footer-bg.png);background-position:center;background-size:cover;">
 		</div>
