@@ -20,18 +20,18 @@
 								<div class="carousel-item <?= 'active'; ?>" data-bs-interval="7000">
 									<div class="row">
 										<div class="col-12 text-center">
-											<div class="col-12 text-center"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>" width="300"></div>
-										</div>
 											<h1 class="text-center"><?= $keterangana->keterangan; ?></h1>
+										</div>
+											<div class="col-12 text-center"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>" width="300"></div>
 									</div>
 								</div>
 							<?php } else { ?>
 								<div class="carousel-item" data-bs-interval="7000">
 									<div class="row">
 										<div class="col-12 text-center">
-											<div class="col-12 text-center"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>" width="300"></div>
-										</div>
 											<h1 class="text-center"><?= $keterangana->keterangan; ?></h1>
+										</div>
+											<div class="col-12 text-center"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>" width="300"></div>
 									</div>
 								</div>
 						<?php  }
