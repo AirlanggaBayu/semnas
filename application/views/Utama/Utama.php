@@ -8,7 +8,7 @@
 	<!--/.bg-holder-->
 
 	<div class="container">
-		<div class="row">
+		<div class="jumbotron">
 			<div class="col-md-12 col-lg-12 py-6 text-sm-start text-center">
 				<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 					<!-- <ul data-target="#myCarousel" data-slide-to="<?= $index; ?>" class="<?= $actives; ?>"> </ul> -->
@@ -19,19 +19,19 @@
 						?>
 								<div class="carousel-item <?= 'active'; ?>" data-bs-interval="7000">
 									<div class="row">
-										<div class="col-6">
-											<h1><?= $keterangana->keterangan; ?></h1>
+										<div class="col-12 text-center">
+											<div class="col-12 text-center"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>" width="300"></div>
 										</div>
-										<div class="col-6"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>" width="300"></div>
+											<h1 class="text-center"><?= $keterangana->keterangan; ?></h1>
 									</div>
 								</div>
 							<?php } else { ?>
 								<div class="carousel-item" data-bs-interval="7000">
 									<div class="row">
-										<div class="col-6">
-											<h1><?= $keterangana->keterangan; ?></h1>
+										<div class="col-12 text-center">
+											<div class="col-12 text-center"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>" width="300"></div>
 										</div>
-										<div class="col-6"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>" width="300"></div>
+											<h1 class="text-center"><?= $keterangana->keterangan; ?></h1>
 									</div>
 								</div>
 						<?php  }
@@ -60,8 +60,11 @@
 				</div>
 			</div> -->
 		</div>
+	</div>
 
+	<!-- cok -->
 
+	
 		<section class="py-0">
 			<div class="bg-holder" style="background-image:url(<?= base_url(); ?>/assets/public/assets/img/illustrations/bg.png);background-position:left top;background-size:initial;margin-top:-180px;">
 			</div>
