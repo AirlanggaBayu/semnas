@@ -48,7 +48,7 @@
 
             <div class="container">
 				<a class="navbar-brand d-flex align-items-center fw-bolder fs-2 fst-italic" href="#">
-					<div class="text-info">CAAS-2021</div>
+					<img src="<?= base_url()?>/assets/public/assets/img/illustrations/logo-atas.png" alt="" style="max-width:250px">
 				</a>
 				<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">

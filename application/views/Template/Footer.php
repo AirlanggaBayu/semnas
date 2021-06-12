@@ -27,7 +27,7 @@
 				<h3 style="text-transform: capitalize;"><b>Tentang CAAS 2021</b></h3>
 				<div class="row">
 					<div class="col-lg-4">
-						<img src="https://conference.polije.ac.id/caas/2021/img/icofa-logo.svg" alt=" " class="mb-3" height="100">
+						<img src="<?= base_url()?>/assets/public/assets/img/illustrations/logo-bawah.png" alt=" " class="mb-3" height="150">
 					</div>
 					<div class="col-lg-8 text-white">
 						<p>Seminar Nasional Ilmu Peternakan Terapan Seri 1 (Semnas IPT-1) Tahun 2020 diselenggarakan oleh Jurusan Peternakan, Politeknik Negeri Jember. Adapun Tema kegiatan ini adalah Kedaulatan Pangan Nasional Melalui Pengembangan Potensi Ternak Lokal di Era Kenormalan Baru. Tahapan yang dilakukan pada Semnas IPT-1 Tahun 2020 adalah: 1) Seminar Nasional Umum, tanggal 19 Sep 2020; dan 2) Sesi Paralel, tanggal 21-22 September 2020.</p>
