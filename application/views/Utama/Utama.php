@@ -7,39 +7,44 @@
 	</div>
 	<!--/.bg-holder-->
 
-	<div class="container">
 		<div class="jumbotron">
 			<div class="col-md-12 col-lg-12 py-6 text-sm-start text-center">
-				<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+				<div id="carouselExamplInterval" class="carousel slide" data-bs-ride="carousel">
 					<!-- <ul data-target="#myCarousel" data-slide-to="<?= $index; ?>" class="<?= $actives; ?>"> </ul> -->
 					<div class="carousel-inner">
 						<?php
 						foreach ($slider as $index => $keterangana) {
 							if ($index == 0) {
 						?>
-								<div class="carousel-item <?= 'active'; ?>" data-bs-interval="7000">
-									<div class="row">
-										<div class="col-12 text-center">
-											<h1 class="text-center"><?= $keterangana->keterangan; ?></h1>
+								<div class="carousel-item <?= 'active'; ?>" data-bs-interval="3000">
+									
+										
+									<div class="col-12 text-center"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>"class="d-block w-100""></div>
+										<div class="carousel-caption d-none d-lg-block">
+												<center><h1 style="color:black" class="text-center"><?= $keterangana->keterangan; ?></h1></center>
 										</div>
-											<div class="col-12 text-center"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>" width="300"></div>
-									</div>
+									
 								</div>
 							<?php } else { ?>
-								<div class="carousel-item" data-bs-interval="7000">
-									<div class="row">
-										<div class="col-12 text-center">
-											<h1 class="text-center"><?= $keterangana->keterangan; ?></h1>
-										</div>
-											<div class="col-12 text-center"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>" width="300"></div>
-									</div>
+								<div class="carousel-item" data-bs-interval="3000">
+									
+										
+											<div class="col-12 text-center"><img src="<?= base_url('img/slider/') . $keterangana->gambar_slider ?>"class="d-block w-100""></div>
+											<div class="carousel-caption d-none d-lg-block">
+												<center><h1 style="color:black" class="text-center"><?= $keterangana->keterangan; ?></h1></center>
+											</div>
+									
 								</div>
+
+								
 						<?php  }
 						}
 						?>
 					</div>
 				</div>
 			</div>
+		</div>
+	
 			<!-- <div class="col-md-6 col-lg-6 py-6 text-sm-start text-center">
 				<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 
@@ -60,9 +65,9 @@
 				</div>
 			</div> -->
 		</div>
-	</div>
+	
 
-	<!-- cok -->
+	<!-- ok -->
 
 	
 		<section class="py-0">
@@ -208,15 +213,15 @@
 				</div>
 				<div class="row justify-content-center">
 					<!-- <div class="col-md-4 mb-5">
-		<div class="card">
-			<div class="card-body">
-				<h4 class="text-center">Abstract Templete</h4>
-				<div class="d-grid gap-2">
-					<p class="card-text text-center text-1000">Download Templete Abstract</p>
-					<a href="" class="btn btn-success"><i class="bi bi-arrow-down-circle"></i> Download</a>
-				</div>
-			</div>
-		</div> -->
+								<div class="card">
+									<div class="card-body">
+										<h4 class="text-center">Abstract Templete</h4>
+										<div class="d-grid gap-2">
+											<p class="card-text text-center text-1000">Download Templete Abstract</p>
+											<a href="" class="btn btn-success"><i class="bi bi-arrow-down-circle"></i> Download</a>
+										</div>
+									</div>
+								</div> -->
 					<div class="col-md-4 mb-5">
 						<div class="card">
 							<div class="card-body">
@@ -254,6 +259,8 @@
 				<?php } ?>
 			</div>
 		</section>
+</section>
+	
 
 
 		<!-- dfc -->
